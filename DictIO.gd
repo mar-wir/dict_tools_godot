@@ -93,16 +93,3 @@ func create_students(dict:Dictionary, group:String, students:Array, content):
 		
 	dict = DictIO.manipulate_nested_dict(dict, path, 'write', tmpdict, [])
 	return(dict)
-####################################################################
-#Examples:
-
-	
-# var loaded_save = BackEnd.load_save(GlobalVar.USER_DIR, "Teacher1")
-# loaded_save.Classes['B1'] = {"Students":{"Marco": {"Grade": 10}, "Julia": {"Grade": 11}}}
-
-
-
-# var newnew = DictIO.create_students(loaded_save, 'A33_C', ["Name1", "Name2", "Name3"], {})
-	
-
-# DictCSV.export_nested_dict_to_csv(GlobalVar.TEST_DICT, '/home/seneketh/Desktop', 'test', ",")
